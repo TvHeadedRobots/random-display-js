@@ -4,19 +4,20 @@
   <body>
     <script type="text/javascript">
 
-      // This variable is the total number of notable date divs
-      var notableDatesCount = 6;
+      // This variable is the total number of ids to display
+      var idCount = 6;
 
-      // generate a random number between 1 and `notableDatesCount`
-      var notableDateNumDisplay = Math.floor((Math.random() * notableDatesCount) + 1);
+      // generate a random number between 1 and `idCount`
+      var idNumDisplay = Math.floor((Math.random() * idCount) + 1);
 
-      // create a string with the number genetated in notableDateNumDisplay and id of the div
-      var notableDateToDisplay = "notable-dates-" + notableDateNumDisplay;
+      // create a string with the number genetated in `idNumDisplay`` and id of the div
+      var idNameStr = "notable-dates-"
+      var idToDisplay = idNameStr + idNumDisplay;
 
       // on page load display the necessary div
       window.onload = function() {
-        document.getElementById(notableDateToDisplay).style.display = 'block';
-        console.log(notableDateToDisplay);
+        document.getElementById(idToDisplay).style.display = 'block';
+        console.log("Dispalying element ID: " + idToDisplay);
       };
     </script>
 
